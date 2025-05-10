@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <div class="nav-item projects-dropdown">
+                <span>Projects</span>
+                <div class="dropdown-content">
+                    <a href="projects/project1.html">Project 1</a>
+                    <a href="projects/project2.html">Project 2</a>
+                    <a href="projects/project3.html">Project 3</a>
+                </div>
+            </div>
+            <a href="demos.html" class="nav-item">Demos</a>
+            <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="projects-grid">
+            <article class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h2>Project 1</h2>
+                <a href="projects/project1.html" class="project-link">View Project</a>
+            </article>
+            <!-- More project cards will be added here -->
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
