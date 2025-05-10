@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Matthew Williams - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="sidebar">
-        <div class="nav-content">
+    <nav class="topbar">
+        <div class="topbar-content">
             <h1 class="name-title">Matthew Williams</h1>
-            <p class="name-description">[efficient, performant, and driven]</p>
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="about.html" class="nav-item">About</a>
-            <div class="nav-item projects-dropdown">
-                <span>Projects</span>
-                <div class="dropdown-content">
-                    <a href="projects/tinyWeather.html">tinyWeather 1</a>
-                </div>
-            </div>
-            <a href="demos.html" class="nav-item">Demos</a>
-            <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
         </div>
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
     </nav>
 
     <main class="content">
-        <div class="projects-grid">
-            <article class="project-card">
-                <img src="images/tinyWeather.jpg" alt="tinyWeather">
-                <h2>tinyWeather - lightweight weather notifications for Linux</h2>
-                <a href="projects/tinyWeather.html" class="project-link">view tinyWeather</a>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="images/tinyWeather.jpg" alt="tinyWeather">
+                    <h2>tinyWeather</h2>
+                    <a href="projects/tinyWeather.html" class="project-link">view tinyWeather</a>
+                </article>
+                <!-- More project cards will be added here -->
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <h2 class="section-title">About</h2>
+            <article class="about-content">
+                <p>software engineer, student at Texas A&M University, focused on performant software, embedded systems, and real-time systems and robotics</p>
+                
+                <h2>Interests</h2>
+                <ul>
+                    <li>robotics, particularly 3d-less reasoning</li>
+                    <li>secure + performant embedded systems</li>
+                    <li>autonomous drones and drone assistants</li>
+                </ul>
             </article>
-            <!-- More project cards will be added here -->
-        </div>
+        </section>
     </main>
 
     <script src="js/main.js"></script>
