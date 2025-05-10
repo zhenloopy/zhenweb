@@ -3,12 +3,16 @@
     --text-color: #000000;
     --accent-color: #333333;
     --sidebar-width: 250px;
+    --link-color: #1a4b8c;  /* Dark blue for light mode */
+    --link-visited-color: #2a6bc7;  /* Lighter blue for visited links in light mode */
 }
 
 [data-theme="dark"] {
     --bg-color: #000000;
     --text-color: #ffffff;
     --accent-color: #cccccc;
+    --link-color: #a8c6fa;  /* Pastel blue for dark mode */
+    --link-visited-color: #7ba3e8;  /* Darker pastel blue for visited links in dark mode */
 }
 
 * {
@@ -116,9 +120,13 @@ body {
 }
 
 .project-link {
-    color: var(--text-color);
+    color: var(--link-color);
     text-decoration: none;
     border-bottom: 1px solid var(--accent-color);
+}
+
+.project-link:visited {
+    color: var(--link-visited-color);
 }
 
 .theme-toggle {
@@ -133,4 +141,19 @@ body {
 
 .theme-toggle:hover {
     opacity: 0.7;
+}
+
+/* Add link styles */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a:hover {
+    opacity: 0.8;
 } 
